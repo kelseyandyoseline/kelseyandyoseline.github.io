@@ -4,12 +4,14 @@ html, body{
 }
 .homePage body{
     background-image: url('https://kelseyandyoseline.github.io/assets/prom_pic2.jpg');
+    background-attachment: initial;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: absolute;
     background-position: center;
 }
 h1, h2, h3{
     font-family: 'Great Vibes', cursive;
+    margin:0;
 }
 p{
     font-family: 'Roboto', sans-serif;
@@ -19,7 +21,7 @@ p{
     to { display:none; }
 }
 .navIcon{
-    position: fixed;
+    position: absolute;
     height: 40px;
     float: right;
     z-index: 9999;
@@ -44,5 +46,6 @@ header{
     width: 100%;
     height: auto;
     text-align: center;
+    margin-top: 50px;
 }
 
