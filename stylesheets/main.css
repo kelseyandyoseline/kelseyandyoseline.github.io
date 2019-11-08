@@ -2,7 +2,7 @@ html, body{
     padding:0;
     margin:0;
 }
-.homePage body{
+.homePage{
     background-image: url('https://kelseyandyoseline.github.io/assets/prom_pic2.jpg');
     background-attachment: initial;
     background-size: cover;
