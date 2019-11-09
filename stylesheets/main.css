@@ -38,7 +38,7 @@ p{
     border: 0 none;
     background: transparent;
     outline: 0;
-    
+
   }
   
   /**
@@ -104,5 +104,11 @@ header{
     height: auto;
     text-align: center;
     margin-top: 90px;
+    margin-bottom: 90px;
+}
+main{
+    background-color: white;
+    height: 500px;
+    padding: 20px;
 }
 
