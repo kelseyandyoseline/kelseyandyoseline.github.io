@@ -4,7 +4,7 @@ html, body{
 }
 .homePage{
     background-image: url('https://kelseyandyoseline.github.io/assets/prom_pic2.jpg');
-    background-attachment: initial;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
