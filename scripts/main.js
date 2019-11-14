@@ -8,12 +8,34 @@ for(i=0; i<=el.length-1; i++) {
 var autoRefresh = setInterval(function(){
   var now = moment();
   var date = moment([2018, 4, 9]);
-  var years = now.diff(date, "years");
-  var months = now.diff(date, "months");
-  var days = now.diff(date, "days");
-  var hours = now.diff(date, "hours");
-  var minutes = now.diff(date, "minutes");
-  var seconds = now.diff(date, "seconds");
+  var yearsR = now.diff(date, "years");
+  var monthsR = now.diff(date, "months");
+  var daysR = now.diff(date, "days");
+  var hoursR = now.diff(date, "hours");
+  var minutesR = now.diff(date, "minutes");
+  var secondsR = now.diff(date, "seconds");
+  var years;
+  var months;
+  var days;
+  var hours;
+  var minutes;
+  var seconds;
+
+ if(yearsR > 1){
+   months = monthsR - (12*yearsR);
+ }
+ if(daysR > 30){
+   days = daysR - (30*monthsR);
+ }
+ if(hoursR > 60){
+   hours = hoursR - (24*daysR);
+ }
+ if(minutesR > 60){
+   minutes = minutesR - (60*hoursR);
+ }
+ if(secondsR > 60){
+   seconds = secondsR - (60*minutesR);
+ }
   
   document.getElementById("years").innerHTML = years + " years,";
   document.getElementById("months").innerHTML = months + " months,";
