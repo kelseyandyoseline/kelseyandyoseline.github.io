@@ -27,7 +27,7 @@ var autoRefresh = setInterval(function(){
   var timesStr = new Object();
   var timesKeys = Object.keys(times);
   times = {"year" : years, "month" : months, "day" : days, "hour" : hours, "minute" : minutes, "second" : seconds};
-  timesStr = {"year" : "year", "month" : "month", "day" : "day", "hours" : "hours", "minutes" : "minutes" , "second" : "second"};
+  timesStr = {"year" : "year", "month" : "month", "day" : "day", "hour" : "hour", "minute" : "minute" , "second" : "second"};
  
   for(i=0; i < timesKeys.length - 1;  i++){
     if(times[timesKeys[i]] == 1){
