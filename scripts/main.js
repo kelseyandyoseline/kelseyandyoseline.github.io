@@ -28,7 +28,10 @@ var autoRefresh = setInterval(function(){
   times = {"year" : years, "month" : months, "day" : days, "hour" : hours, "minute" : minutes, "second" : seconds};
   var timesKeys = Object.keys(times);
   timesStr = {"year" : "year", "month" : "month", "day" : "day", "hour" : "hour", "minute" : "minute" , "second" : "second"};
- 
+
+  months = monthsR - (11 * yearsR);
+  days =  (daysR - 9) - (30*monthsR);
+
   for(i=0; i < timesKeys.length;  i++){
     if(times[timesKeys[i]] == 1){
       timesStr[timesKeys[i]] = timesKeys[i];
@@ -37,9 +40,6 @@ var autoRefresh = setInterval(function(){
       timesStr[timesKeys[i]] = timesKeys[i] + "s";
     }
   }
-
-  months = monthsR - (11 * yearsR);
-  days =  (daysR - 9) - (30*monthsR);
 
  //It works.. just don't touch it...
   
