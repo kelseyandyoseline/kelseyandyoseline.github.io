@@ -23,16 +23,30 @@ var autoRefresh = setInterval(function(){
   var hours = now.hour();
   var minutes = now.minute();
   var seconds = now.second();
+  var times = new Object();
+  var timesStr = new Object();
+  var timesKeys = Object.keys(times);
+  times = {"year" : years, "month" : months, "day" : days, "hour" : hours, "minute" : minutes, "second" : seconds};
+  timesStr = {"year" : "year", "month" : "month", "day" : "day", "hours" : "hours", "minutes" : "minutes" , "second" : "second"};
+ 
+  for(i=0; i < timesKeys.length - 1;  i++){
+    if(times[timesKeys[i]] == 1){
+      timeStr[timesKeys[i]] = timesKeys[i];
+    }
+    else{
+      timesStr[timesKeys[i]] = timesKeys[i] + "s";
+    }
+  }
 
   months = monthsR - (11 * yearsR);
   days =  (daysR - 9) - (30*monthsR);
 
  //It works.. just don't touch it...
   
-  document.getElementById("years").innerHTML = years + " years,";
-  document.getElementById("months").innerHTML = months + " months,";
-  document.getElementById("days").innerHTML = days + " days,";
-  document.getElementById("hours").innerHTML = hours + " hours,";
-  document.getElementById("minutes").innerHTML = minutes + " minutes,";
-  document.getElementById("seconds").innerHTML = "and " + seconds + " seconds.";
+  document.getElementById("years").innerHTML = years + ` ${timesStr["year"]},`;
+  document.getElementById("months").innerHTML = months + ` ${timesStr["month"]},`;
+  document.getElementById("days").innerHTML = days + ` ${timesStr["day"]},`;
+  document.getElementById("hours").innerHTML = hours + ` ${timesStr["hour"]},`;
+  document.getElementById("minutes").innerHTML = minutes + ` ${timesStr["minute"]},`;
+  document.getElementById("seconds").innerHTML = "and " + ` ${timesStr["second"]},`;
 }, 1000);
