@@ -5,6 +5,9 @@ for(i=0; i<=el.length-1; i++) {
     this.classList.toggle('active');
   }, false);
 }
+
+/* Logic to display time we've been dating
+...I love you babe but this logic sucks ass*/
 var autoRefresh = setInterval(function(){
   var now = moment().zone("+08:00");
   var date = moment([2018, 4, 9]).zone("+08:00");
@@ -33,6 +36,7 @@ var autoRefresh = setInterval(function(){
  if(secondsR > 60){
    seconds = secondsR - (60*minutesR);
  }
+ //It works.. just don't touch it...
   
   document.getElementById("years").innerHTML = years + " years,";
   document.getElementById("months").innerHTML = months + " months,";
