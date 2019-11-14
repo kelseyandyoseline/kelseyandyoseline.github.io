@@ -6,8 +6,8 @@ for(i=0; i<=el.length-1; i++) {
   }, false);
 }
 var autoRefresh = setInterval(function(){
-  var now = moment();
-  var date = moment([2018, 4, 9]);
+  var now = moment().zone("+08:00");
+  var date = moment([2018, 4, 9]).zone("+08:00");
   var yearsR = now.diff(date, "years");
   var monthsR = now.diff(date, "months");
   var daysR = now.diff(date, "days");
@@ -21,12 +21,9 @@ var autoRefresh = setInterval(function(){
   var minutes;
   var seconds;
 
- if(monthsR > 1){
-   months = monthsR - (12 * yearsR);
- }
- if(daysR > 30){
-   days = daysR - (30*monthsR);
- }
+  months = monthsR - (12 * yearsR);
+  days =  daysR - ((30*monthsR) - 9);
+
  if(hoursR > 60){
    hours = hoursR - (24*daysR);
  }
