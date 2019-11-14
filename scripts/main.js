@@ -14,15 +14,15 @@ var autoRefresh = setInterval(function(){
   var hoursR = now.diff(date, "hours");
   var minutesR = now.diff(date, "minutes");
   var secondsR = now.diff(date, "seconds");
-  var years;
+  var years = yearsR;
   var months;
   var days;
   var hours;
   var minutes;
   var seconds;
 
- if(yearsR > 1){
-   months = monthsR - (12*yearsR);
+ if(monthsR > 1){
+   months = monthsR - (12 * yearsR);
  }
  if(daysR > 30){
    days = daysR - (30*monthsR);
