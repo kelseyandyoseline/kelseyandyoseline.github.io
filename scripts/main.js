@@ -25,7 +25,7 @@ var autoRefresh = setInterval(function(){
   days =  (daysR - 9) - (30*monthsR);
 
  if(hoursR > 60){
-   hours = hoursR - (24*daysR);
+   hours = hoursR - (23*daysR);
  }
  if(minutesR > 60){
    minutes = minutesR - (60*hoursR);
