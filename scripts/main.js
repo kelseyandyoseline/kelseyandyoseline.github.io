@@ -31,7 +31,7 @@ var autoRefresh = setInterval(function(){
  
   for(i=0; i < timesKeys.length - 1;  i++){
     if(times[timesKeys[i]] == 1){
-      timeStr[timesKeys[i]] = timesKeys[i];
+      timesStr[timesKeys[i]] = timesKeys[i];
     }
     else{
       timesStr[timesKeys[i]] = timesKeys[i] + "s";
