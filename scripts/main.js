@@ -25,8 +25,8 @@ var autoRefresh = setInterval(function(){
   var seconds = now.second();
   var times = new Object();
   var timesStr = new Object();
-  var timesKeys = Object.keys(times);
   times = {"year" : years, "month" : months, "day" : days, "hour" : hours, "minute" : minutes, "second" : seconds};
+  var timesKeys = Object.keys(times);
   timesStr = {"year" : "year", "month" : "month", "day" : "day", "hour" : "hour", "minute" : "minute" , "second" : "second"};
  
   for(i=0; i < timesKeys.length - 1;  i++){
