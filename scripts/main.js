@@ -20,22 +20,13 @@ var autoRefresh = setInterval(function(){
   var years = yearsR;
   var months;
   var days;
-  var hours;
-  var minutes;
-  var seconds;
+  var hours = now.hour();
+  var minutes = now.minute();
+  var seconds = now.second();
 
   months = monthsR - (11 * yearsR);
   days =  (daysR - 9) - (30*monthsR);
 
- if(hoursR > 60){
-   hours = hoursR - (24*daysR);
- }
- if(minutesR > 60){
-   minutes = minutesR - (60*hoursR);
- }
- if(secondsR > 60){
-   seconds = secondsR - (60*minutesR);
- }
  //It works.. just don't touch it...
   
   document.getElementById("years").innerHTML = years + " years,";
