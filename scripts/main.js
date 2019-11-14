@@ -5,28 +5,20 @@ for(i=0; i<=el.length-1; i++) {
     this.classList.toggle('active');
   }, false);
 }
-
-// Date js
-/*
-Count up from any date script-
-By JavaScript Kit (www.javascriptkit.com)
-Over 200+ free scripts here!
-*/
-
-var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
-
-function countup(yr,m,d){
-    var today=new Date()
-    var todayy=today.getYear()
-    if (todayy < 1000)
-    todayy+=1900
-    var todaym=today.getMonth()
-    var todayd=today.getDate()
-    var todaystring=montharray[todaym]+" "+todayd+", "+todayy
-    var paststring=montharray[m-1]+" "+d+", "+yr
-    var difference=(Math.round((Date.parse(todaystring)-Date.parse(paststring))/(24*60*60*1000))*1)
-    difference+=" days"
-    console.log(difference);
-}
-//enter the count up date using the format year/month/day
-countup(2018,04,09);
+var autoRefresh = setInterval(function(){
+  var now = moment();
+  var date = moment([2018, 4, 9]);
+  var years = now.diff(date, "years");
+  var months = now.diff(date, "months");
+  var days = now.diff(date, "days");
+  var hours = now.diff(date, "hours");
+  var minutes = now.diff(date, "minutes");
+  var seconds = now.diff(date, "seconds");
+  
+  document.getElementById("years").innerHTML = years + " years,";
+  document.getElementById("months").innerHTML = months + " months,";
+  document.getElementById("days").innerHTML = days + " days,";
+  document.getElementById("hours").innerHTML = hours + " hours,";
+  document.getElementById("minutes").innerHTML = minutes + " minutes,";
+  document.getElementById("seconds").innerHTML = "and " + seconds + " seconds.";
+}, 1000);
