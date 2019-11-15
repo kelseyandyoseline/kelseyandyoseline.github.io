@@ -30,7 +30,7 @@ var autoRefresh = setInterval(function(){
   var timesKeys = Object.keys(times);
   timesStr = {"year" : "year", "month" : "month", "day" : "day", "hour" : "hour", "minute" : "minute" , "second" : "second"};
 
-  months = monthsR - (11 * yearsR);
+  months = monthsR - (12 * yearsR);
   //days =  (daysR - 9) - (30*monthsR);
 
   for(i=0; i < timesKeys.length;  i++){
