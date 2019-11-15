@@ -9,7 +9,8 @@ for(i=0; i<=el.length-1; i++) {
 /* Logic to display time we've been dating
 ...I love you babe but this logic sucks ass*/
 var autoRefresh = setInterval(function(){
-  var now = moment().zone("-08:00");
+  var nowR = moment().zone("-08:00");
+  var now = nowR.subtract(9, "days");
   var date = moment([2018, 4, 9]).zone("-08:00");
   var yearsR = now.diff(date, "years");
   var monthsR = now.diff(date, "months");
@@ -19,7 +20,7 @@ var autoRefresh = setInterval(function(){
   var secondsR = now.diff(date, "seconds");
   var years = yearsR;
   var months;
-  var days;
+  var days = now.date();
   var hours = now.hour();
   var minutes = now.minute();
   var seconds = now.second();
@@ -30,7 +31,7 @@ var autoRefresh = setInterval(function(){
   timesStr = {"year" : "year", "month" : "month", "day" : "day", "hour" : "hour", "minute" : "minute" , "second" : "second"};
 
   months = monthsR - (11 * yearsR);
-  days =  (daysR - 9) - (30*monthsR);
+  //days =  (daysR - 9) - (30*monthsR);
 
   for(i=0; i < timesKeys.length;  i++){
     if(times[timesKeys[i]] == 1){
