@@ -98,8 +98,8 @@ p{
     transform: translateY(-.2em) rotate(-135deg);
   }
   .panel{
-    height: 85vh;
-    width: 97%;
+    height: 75%;
+    width: 75%;
     background-color:white;
     margin: 1%;
     margin-top: 80px;
