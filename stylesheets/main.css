@@ -99,6 +99,7 @@ p{
   }
   .hamburger.hamburger-cancel.active + .panel {
     transition: transform .2s ease-in-out;
+    transform: scale(0);
   }
   
   .hamburger.hamburger-cancel.active:before + .panel {
