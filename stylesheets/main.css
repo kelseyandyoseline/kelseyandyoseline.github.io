@@ -40,10 +40,6 @@ p{
     outline: 0;
 
   }
-  .hamburger + .panel{
-    transition: transform .2s ease-in-out;
-    transform: scaleX(0);
-  }
   
   /**
    * Button height fix for Firefox
@@ -77,6 +73,11 @@ p{
   
     border-radius: .05em;
     background: black;
+  }
+  .hamburger:before + .panel,
+  .hamburger .icon + .panel,
+  .hamburger:after + .panel {
+    transform: scaleX(0);
   }
   
   /**
