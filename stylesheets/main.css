@@ -99,17 +99,16 @@ p{
   }
   .hamburger.hamburger-cancel.active + .panel {
     transition: transform .2s ease-in-out;
-    transform: scale(0);
   }
   
   .hamburger.hamburger-cancel.active:before + .panel {
     transition: transform .2s ease-in-out;
-    transform: scaleX(1);
+    transform: scaleX(0);
   }
   
   .hamburger.hamburger-cancel.active:after + .panel {
     transition: transform .2s ease-in-out;
-    transform: scaleX(0);
+    transform: scaleX(1);
   }
   .panel{
     height: 400px;
@@ -122,6 +121,7 @@ p{
     border-style: dotted;
     border-color: lightpink;
     outline:none;
+    transform: scale(0);
   }
   .panel:before,
   .panel:after{
