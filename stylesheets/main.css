@@ -110,7 +110,7 @@ p{
     position:fixed;
   }
   .hamburger + .panel{
-    transform: scaleX(0);
+    transform: translateX(-1000);
   }
   .hamburger.active + .panel{
     transform: scaleX(1);
