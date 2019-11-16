@@ -74,11 +74,6 @@ p{
     border-radius: .05em;
     background: black;
   }
-  .hamburger:before + .panel,
-  .hamburger .icon + .panel,
-  .hamburger:after + .panel {
-    transform: scaleX(0);
-  }
   
   /**
    * Styles for the active `.hamburger` icon
@@ -102,20 +97,6 @@ p{
   .hamburger.hamburger-cancel.active:after {
     transform: translateY(-.2em) rotate(-135deg);
   }
-  .hamburger.hamburger-cancel.active + .panel {
-    transition: transform .2s ease-in-out;
-    transform: scale(0);
-  }
-  
-  .hamburger.hamburger-cancel.active:before + .panel {
-    transition: transform .2s ease-in-out;
-    transform: scaleX(0);
-  }
-  
-  .hamburger.hamburger-cancel.active:after + .panel {
-    transition: transform .2s ease-in-out;
-    transform: scaleX(1);
-  }
   .panel{
     height: 400px;
     width: 97%;
@@ -125,10 +106,13 @@ p{
     border-style: dotted;
     border-color: lightpink;
     outline:none;
-  }
-  .panel:before,
-  .panel:after{
     transition: transform .2s ease-in-out;
+  }
+  .hamburger + .panel{
+    transform: scaleX(0);
+  }
+  .hamburger.active + .panel{
+    transform: scaleX(1);
   }
 header{
     font-size: 50px;
