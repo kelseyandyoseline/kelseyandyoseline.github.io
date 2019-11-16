@@ -11,10 +11,10 @@ for(i=0; i<=el.length-1; i++) {
 var autoRefresh = setInterval(function(){
   var nowR = moment().zone("-08:00");
   var now = nowR.subtract(9, "days");
+  var monthsR = now.subtract(4, "months");
   var date = moment([2018, 4, 9]).zone("-08:00");
   var years = now.diff(date, "years");
-  var monthsR = now.diff(date, "months");
-  var months;
+  var months = monthsR.month();
   var days = now.date();
   var hours = now.hour();
   var minutes = now.minute();
@@ -25,7 +25,7 @@ var autoRefresh = setInterval(function(){
   var timesKeys = Object.keys(times);
   timesStr = {"year" : "year", "month" : "month", "day" : "day", "hour" : "hour", "minute" : "minute" , "second" : "second"};
 
-  months = monthsR - (12 * yearsR);
+  //months = monthsR - (12 * years);
   //days =  (daysR - 9) - (30*monthsR);
 
   for(i=0; i < timesKeys.length;  i++){
