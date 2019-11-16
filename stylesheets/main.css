@@ -97,6 +97,31 @@ p{
   .hamburger.hamburger-cancel.active:after {
     transform: translateY(-.2em) rotate(-135deg);
   }
+  .panel{
+    height: 400px;
+    width: 97%;
+    background-color:white;
+    display:block;
+    overflow:scroll;
+    margin: 1%;
+    margin-top: 80px;
+    border-style: dotted;
+    border-color: lightpink;
+    outline:none;
+  }
+  .panel:before,
+  .panel:after{
+    transition: transform .2s ease-in-out;
+  }
+  .panel.closed-panel.active{
+    transform: scale(0);
+  }
+  .panel.closed-panel.active:before{
+    transform: scaleX(0);
+  }
+  .panel.closed-panel.active:after{
+    transform: scaleX(1);
+  }
 header{
     font-size: 50px;
     z-index: 9998;
