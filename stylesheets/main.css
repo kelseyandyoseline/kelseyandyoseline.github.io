@@ -98,15 +98,18 @@ p{
     transform: translateY(-.2em) rotate(-135deg);
   }
   .hamburger.hamburger-cancel.active + .panel {
+    transition: transform .2s ease-in-out;
     transform: scale(0);
   }
   
   .hamburger.hamburger-cancel.active:before + .panel {
-    transform: scaleX(0);
+    transition: transform .2s ease-in-out;
+    transform: scaleX(1);
   }
   
   .hamburger.hamburger-cancel.active:after + .panel {
-    transform: scaleX(1);
+    transition: transform .2s ease-in-out;
+    transform: scaleX(0);
   }
   .panel{
     height: 400px;
