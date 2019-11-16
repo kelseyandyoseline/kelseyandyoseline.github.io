@@ -6,6 +6,22 @@ for(i=0; i<=el.length-1; i++) {
   }, false);
 }
 
+//update  nav
+function updateNav() {
+  var txtFile = new XMLHttpRequest();
+  var allText = "file not found";
+  txtFile.onreadystatechange = function () {
+      if (txtFile.readyState === XMLHttpRequest.DONE && txtFile.status == 200) {
+          allText = txtFile.responseText;
+      }
+
+      document.getElementById('directory').innerHTML = allText;
+  }
+  txtFile.open("GET", '/txt-content/nav.txt', true);
+  txtFile.send(null);
+}
+window.onload = updateNav();
+
 
 /* Count up from day I asked out Yoseline.
 It works... I think*/

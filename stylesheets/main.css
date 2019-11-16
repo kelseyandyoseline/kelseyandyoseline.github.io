@@ -100,14 +100,16 @@ p{
   .panel{
     height: 100%;
     width: 75%;
-    background-color:white;
+    background-color:floralwhite;
     margin: 1%;
     margin-top: 70px;
-    border-style: dotted;
+    border-style: solid;
     border-color: lightpink;
     outline:none;
     transition: transform .2s ease-in-out;
     position:fixed;
+    box-shadow: 1px 30px 20px black;
+
   }
   .hamburger + .panel{
     transform: translateX(-1000px);
