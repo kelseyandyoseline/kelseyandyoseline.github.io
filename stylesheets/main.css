@@ -22,7 +22,7 @@ p{
     height: 10px;
 }
 .hamburger {
-    font-size: 60px;
+    font-size: 40px;
   
     display: inline-block;
   
@@ -102,7 +102,7 @@ p{
     width: 75%;
     background-color:white;
     margin: 1%;
-    margin-top: 80px;
+    margin-top: 70px;
     border-style: dotted;
     border-color: lightpink;
     outline:none;
