@@ -11,7 +11,7 @@ for(i=0; i<=el.length-1; i++) {
 var autoRefresh = setInterval(function(){
   var nowR = moment().zone("-08:00");
   var now = nowR.subtract(9, "days");
-  var monthsR = now.subtract(4, "months");
+  var monthsR = now.subtract(3, "months");
   var date = moment([2018, 4, 9]).zone("-08:00");
   var years = now.diff(date, "years");
   var months = monthsR.month();
