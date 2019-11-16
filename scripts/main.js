@@ -12,13 +12,8 @@ var autoRefresh = setInterval(function(){
   var nowR = moment().zone("-08:00");
   var now = nowR.subtract(9, "days");
   var date = moment([2018, 4, 9]).zone("-08:00");
-  var yearsR = now.diff(date, "years");
+  var years = now.diff(date, "years");
   var monthsR = now.diff(date, "months");
-  var daysR = now.diff(date, "days");
-  var hoursR = now.diff(date, "hours");
-  var minutesR = now.diff(date, "minutes");
-  var secondsR = now.diff(date, "seconds");
-  var years = yearsR;
   var months;
   var days = now.date();
   var hours = now.hour();
