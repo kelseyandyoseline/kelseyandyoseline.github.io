@@ -1,10 +1,8 @@
 // Hamburger nav javascript
 var el = document.querySelectorAll('.hamburger');
-var panel = document.querySelectorAll('.panel');
 for(i=0; i<=el.length-1; i++) {
   el[i].addEventListener('click', function() {
     this.classList.toggle('active');
-    panel.classList.toggle('active');
   }, false);
 }
 

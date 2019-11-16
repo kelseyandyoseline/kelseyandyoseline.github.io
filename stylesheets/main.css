@@ -97,6 +97,17 @@ p{
   .hamburger.hamburger-cancel.active:after {
     transform: translateY(-.2em) rotate(-135deg);
   }
+  .hamburger.hamburger-cancel.active + .panel {
+    transform: scale(0);
+  }
+  
+  .hamburger.hamburger-cancel.active:before + .panel {
+    transform: scaleX(0);
+  }
+  
+  .hamburger.hamburger-cancel.active:after + .panel {
+    transform: scaleX(1);
+  }
   .panel{
     height: 400px;
     width: 97%;
@@ -112,15 +123,6 @@ p{
   .panel:before,
   .panel:after{
     transition: transform .2s ease-in-out;
-  }
-  .panel.closed-panel.active{
-    transform: scale(0);
-  }
-  .panel.closed-panel.active:before{
-    transform: scaleX(0);
-  }
-  .panel.closed-panel.active:after{
-    transform: scaleX(1);
   }
 header{
     font-size: 50px;
