@@ -40,5 +40,5 @@ var autoRefresh = setInterval(function(){
   document.getElementById("days").innerHTML = days + ` ${timesStr["day"]},`;
   document.getElementById("hours").innerHTML = hours + ` ${timesStr["hour"]},`;
   document.getElementById("minutes").innerHTML = minutes + ` ${timesStr["minute"]},`;
-  document.getElementById("seconds").innerHTML = "and " + seconds + ` ${timesStr["second"]},`;
+  document.getElementById("seconds").innerHTML = "and " + seconds + ` ${timesStr["second"]}.`;
 }, 1000);
