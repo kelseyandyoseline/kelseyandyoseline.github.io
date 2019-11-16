@@ -1,10 +1,17 @@
 // Hamburger nav javascript
-var el = document.querySelectorAll('.nav');
+var el = document.querySelectorAll('.hamburger');
 for(i=0; i<=el.length-1; i++) {
   el[i].addEventListener('click', function() {
     this.classList.toggle('active');
   }, false);
 }
+var el = document.querySelectorAll('.panel');
+for(i=0; i<=el.length-1; i++) {
+  el[i].addEventListener('click', function() {
+    this.classList.toggle('active');
+  }, false);
+}
+
 
 /* Count up from day I asked out Yoseline.
 It works... I think*/
