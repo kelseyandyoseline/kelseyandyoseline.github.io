@@ -30,7 +30,6 @@ p{
     height: 1em;
     padding: 0;
     margin: 20px;
-    float: right;
     cursor: pointer;
     transition: transform .2s ease-in-out;
     vertical-align: middle;
@@ -38,6 +37,7 @@ p{
     border: 0 none;
     background: transparent;
     outline: 0;
+    position:fixed;
 
   }
   
@@ -107,6 +107,7 @@ p{
     border-color: lightpink;
     outline:none;
     transition: transform .2s ease-in-out;
+    position:fixed;
   }
   .hamburger + .panel{
     transform: scaleX(0);
