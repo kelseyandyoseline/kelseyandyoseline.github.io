@@ -98,7 +98,6 @@ p{
     transform: translateY(-.2em) rotate(-135deg);
   }
   .hamburger.hamburger-cancel.active + .panel {
-    display:block;
     transition: transform .2s ease-in-out;
     transform: scale(0);
   }
@@ -110,6 +109,7 @@ p{
   }
   
   .hamburger.hamburger-cancel.active:after + .panel {
+    display:block;
     transition: transform .2s ease-in-out;
     transform: scaleX(1);
   }
