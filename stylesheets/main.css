@@ -98,7 +98,7 @@ p{
     transform: translateY(-.2em) rotate(-135deg);
   }
   .panel{
-    height: 80vh;
+    height: 85vh;
     width: 97%;
     background-color:white;
     margin: 1%;
@@ -110,7 +110,7 @@ p{
     position:fixed;
   }
   .hamburger + .panel{
-    transform: translateX(-1000);
+    transform: translateX(-1000px);
   }
   .hamburger.active + .panel{
     transform: scaleX(1);
