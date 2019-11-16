@@ -98,11 +98,13 @@ p{
     transform: translateY(-.2em) rotate(-135deg);
   }
   .hamburger.hamburger-cancel.active + .panel {
+    display:block;
     transition: transform .2s ease-in-out;
     transform: scale(0);
   }
   
   .hamburger.hamburger-cancel.active:before + .panel {
+    display:none;
     transition: transform .2s ease-in-out;
     transform: scaleX(0);
   }
@@ -115,7 +117,6 @@ p{
     height: 400px;
     width: 97%;
     background-color:white;
-    display:block;
     overflow:scroll;
     margin: 1%;
     margin-top: 80px;
