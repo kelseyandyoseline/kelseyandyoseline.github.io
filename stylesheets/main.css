@@ -83,6 +83,12 @@ p{
   .hamburger.active:after {
     background: black;
   }
+  .hamburger.active:before  + .panel,
+  .hamburger.active .icon + .panel,
+  .hamburger.active:after + .panel {
+    transition: transform .2s ease-in-out;
+    transform: scaleX(0);
+  }
 /**
  * CLOSE/CANCEL/CROSS
  */
@@ -120,8 +126,6 @@ p{
     border-style: dotted;
     border-color: lightpink;
     outline:none;
-    transition: transform .2s ease-in-out;
-    transform: scaleX(0);
   }
   .panel:before,
   .panel:after{
