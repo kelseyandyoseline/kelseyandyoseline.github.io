@@ -121,10 +121,24 @@ p{
   .hamburger.active + .panel{
     transform: scaleX(1);
   }
+  .panel ul{
+    text-decoration: none;
+    margin: 10px;
+  }
+  .panel li a{
+    display: block;
+    padding: 8px 16px;
+    border-radius: 10em;
+    word-wrap: break-word;
+  }
   .panel a{
     font-family: 'Roboto', sans-serif;
-    text-decoration: none;
     font-size: 20px;
+    color: black;
+  }
+  .panel.active{
+    color: fuchsia;
+    background-color: white;
   }
 
 
