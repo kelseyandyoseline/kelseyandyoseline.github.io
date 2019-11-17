@@ -122,10 +122,12 @@ p{
     transform: scaleX(1);
   }
   .panel ul{
+    padding: 0px;
+    list-style-type: none;
     text-decoration: none;
     margin: 10px;
   }
-  .panel li a{
+  .panel li, .panel a{
     display: block;
     padding: 8px 16px;
     border-radius: 10em;
