@@ -115,18 +115,20 @@ p{
   .cover{
     height: 100%;
     width: 100%;
-    transition: background .2s ease-in-out;
+    opacity: .5;
+    color: gray;
+    transition: visibility .2s ease-in-out;
     position:fixed;
     z-index: 1;
   }
   .hamburger + .cover{
-    background: rgba(100,100,100, 0);
+    visibility: hidden;
   }
   .hamburger + .panel{
     transform: translateX(-1000px);
   }
   .hamburger.active + .cover {
-    background: rgba(100,100,100, .5);
+    visibility: visible;
   }
   .hamburger.active + .panel{
     transform: scaleX(1);
