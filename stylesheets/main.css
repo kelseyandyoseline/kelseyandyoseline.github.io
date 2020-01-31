@@ -102,10 +102,8 @@ p{
   .panel{
     height: 100%;
     width: 50%;
-    background-color:floralwhite;
+    background-color:white;
     margin: 0;
-    border-right-style: solid;
-    border-right-color: black;
     outline:none;
     transition: transform .2s ease-in-out;
     position:fixed;
@@ -115,11 +113,25 @@ p{
     /*box-shadow: 1px 30px 20px black;*/
 
   }
+  .cover{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color:gray;
+    transition: opacity .2s ease-in-out;
+    position:fixed;
+  }
   .hamburger + .panel{
     transform: translateX(-1000px);
   }
+  .haburger + .cover{
+    opacity: 0;
+  }
   .hamburger.active + .panel{
     transform: scaleX(1);
+  }
+  .hamburger.active + .cover {
+    opacity: .50;
   }
   .panel ul{
     padding: 0px;
@@ -139,9 +151,9 @@ p{
     color: black;
     text-decoration:none;
   }
+  /*you can't just say active without defining it.*/
   .active{
-    color: fuchsia;
-    background-color: white;
+    color: white;
   }
 
 
