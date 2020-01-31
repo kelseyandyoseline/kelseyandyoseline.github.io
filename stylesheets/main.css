@@ -121,17 +121,17 @@ p{
     position:fixed;
     z-index: 1;
   }
-  .hamburger + .panel{
-    transform: translateX(-1000px);
-  }
   .haburger + .cover{
     opacity: 0;
   }
-  .hamburger.active + .panel{
-    transform: scaleX(1);
+  .hamburger + .panel{
+    transform: translateX(-1000px);
   }
   .hamburger.active + .cover {
     opacity: 0.5;
+  }
+  .hamburger.active + .panel{
+    transform: scaleX(1);
   }
   .panel ul{
     padding: 0px;
