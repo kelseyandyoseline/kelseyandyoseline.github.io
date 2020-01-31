@@ -39,7 +39,7 @@ p{
     background: transparent;
     outline: 0;
     position:fixed;
-    z-index: 2;
+    z-index: 5;
 
   }
   
@@ -109,8 +109,7 @@ p{
     position:fixed;
     padding-top: 60px;
     padding-left: 60px;
-
-    /*box-shadow: 1px 30px 20px black;*/
+    z-index:2;
 
   }
   .cover{
@@ -120,6 +119,7 @@ p{
     background-color:gray;
     transition: opacity .2s ease-in-out;
     position:fixed;
+    z-index: 1;
   }
   .hamburger + .panel{
     transform: translateX(-1000px);
@@ -131,7 +131,7 @@ p{
     transform: scaleX(1);
   }
   .hamburger.active + .cover {
-    opacity: .50;
+    opacity: 0.5;
   }
   .panel ul{
     padding: 0px;
