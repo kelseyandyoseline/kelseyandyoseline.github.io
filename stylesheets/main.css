@@ -115,20 +115,18 @@ p{
   .cover{
     height: 100%;
     width: 100%;
-    opacity: 0;
-    background-color:gray;
     transition: opacity .2s ease-in-out;
     position:fixed;
     z-index: 1;
   }
   .haburger + .cover{
-    opacity: 0;
+    background: rgb(100,100,100, 0)
   }
   .hamburger + .panel{
     transform: translateX(-1000px);
   }
   .hamburger.active + .cover {
-    opacity: 0.5;
+    background: rgb(100,100,100, .5)
   }
   .hamburger.active + .panel{
     transform: scaleX(1);
