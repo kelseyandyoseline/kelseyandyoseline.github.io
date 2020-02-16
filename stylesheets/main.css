@@ -120,12 +120,7 @@ p{
     transition: visibility .2s ease-in-out;
     position:fixed;
     z-index: 1;
-  }
-  .cover.on:before{
     visibility: hidden;
-  }
-  .cover.on:after{
-    visibility: visible;
   }
   .hamburger + .panel{
     transform: translateX(-1000px);
@@ -156,7 +151,7 @@ p{
     color: white;
   }
   .on{
-    color: darkgray;
+    visibility: visible;
   }
 
 
