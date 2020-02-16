@@ -4,11 +4,13 @@ var cover = document.querySelectorAll('.cover');
 for(i=0; i<=el.length-1; i++) {
   el[i].addEventListener('click', function() {
     this.classList.toggle('active');
+    this.classList.toggle('on');
   }, false);
 }
 for(i=0; i<=cover.length-1; i++) {
   cover[i].addEventListener('click', function() {
     this.classList.toggle('on');
+    this.classList.toggle('active');
   }, false);
 }
 
