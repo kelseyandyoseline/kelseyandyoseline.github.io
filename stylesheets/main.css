@@ -117,12 +117,14 @@ p{
     width: 100%;
     opacity: .5;
     color: gray;
-    visibility: hidden;
     transition: visibility .2s ease-in-out;
     position:fixed;
     z-index: 1;
   }
-  .cover.active{
+  .cover.on:before{
+    visibility: hidden;
+  }
+  .cover.on:after{
     visibility: visible;
   }
   .hamburger + .panel{
@@ -152,6 +154,9 @@ p{
   /*you can't just say active without defining it.*/
   .active{
     color: white;
+  }
+  .on{
+    color: darkgray;
   }
 
 

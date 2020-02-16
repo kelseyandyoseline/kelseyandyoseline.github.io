@@ -8,7 +8,7 @@ for(i=0; i<=el.length-1; i++) {
 }
 for(i=0; i<=cover.length-1; i++) {
   cover[i].addEventListener('click', function() {
-    this.classList.toggle('active');
+    this.classList.toggle('on');
   }, false);
 }
 
