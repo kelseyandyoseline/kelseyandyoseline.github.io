@@ -1,10 +1,9 @@
 // Hamburger nav javascript
 var el = document.querySelectorAll('.hamburger');
-var cover = document.querySelectorAll('.cover');
 for(i=0; i<=el.length-1; i++) {
   el[i].addEventListener('click', function() {
     this.classList.toggle('active');
-    cover.classList.toggle('on');
+    $("cover").classList.toggle('on');
   }, false);
 }
 
