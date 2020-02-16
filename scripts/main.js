@@ -3,14 +3,14 @@ var el = document.querySelectorAll('.hamburger');
 var cover = document.querySelectorAll('.cover');
 for(i=0; i<=el.length-1; i++) {
   el[i].addEventListener('click', function() {
-    el.classList.toggle('active');
-    cover.classList.toggle('on');
+    this.classList.toggle('active');
+    this.classList.toggle('on');
   }, false);
 }
 for(i=0; i<=cover.length-1; i++) {
   cover[i].addEventListener('click', function() {
-    el.classList.toggle('on');
-    cover.classList.toggle('active');
+    this.classList.toggle('on');
+    this.classList.toggle('active');
   }, false);
 }
 
