@@ -117,6 +117,7 @@ p{
     width: 100%;
     opacity: 0;
     background-color: gray;
+    transition: opacity 1s ease-in-out;
     position:fixed;
     z-index: 1;
   }
@@ -150,7 +151,7 @@ p{
   }
   .on{
     opacity: .5;
-    transform: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
   }
 
 
