@@ -4,10 +4,7 @@ var cover = document.querySelectorAll('.cover');
 for(i=0; i<=el.length-1; i++) {
   el[i].addEventListener('click', function() {
     this.classList.toggle('active');
-    for(i=0; i<=cover.length-1; i++) {
-      cover[i].addEventListener('click', function() {
-        this.classList.toggle('on');
-      }, false);
+    cover.classList.toggle('on');
     }
   }, false);
 }
