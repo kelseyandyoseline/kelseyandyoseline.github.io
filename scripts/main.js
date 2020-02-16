@@ -1,7 +1,13 @@
 // Hamburger nav javascript
 var el = document.querySelectorAll('.hamburger');
+var cover = document.querySelectorAll('.cover');
 for(i=0; i<=el.length-1; i++) {
   el[i].addEventListener('click', function() {
+    this.classList.toggle('active');
+  }, false);
+}
+for(i=0; i<=cover.length-1; i++) {
+  cover[i].addEventListener('click', function() {
     this.classList.toggle('active');
   }, false);
 }
